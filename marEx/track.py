@@ -194,9 +194,7 @@ class tracker:
         if (self.T_fill % 2 != 0):
             raise ValueError('T_fill must be even for symmetry')
         
-        # Check geographic coordinates
-        if ((self.lon.max().compute().item() - self.lon.min().compute().item()) < 100):
-            raise ValueError('Lat/Lon coordinates must be in degrees')
+
     
     def _setup_unstructured_grid(self, temp_dir, neighbours, cell_areas, max_iteration):
         """Set up special handling for unstructured grids."""
