@@ -193,7 +193,6 @@ class tracker:
         
         if (self.T_fill % 2 != 0):
             raise ValueError('T_fill must be even for symmetry')
-        
 
     
     def _setup_unstructured_grid(self, temp_dir, neighbours, cell_areas, max_iteration):
